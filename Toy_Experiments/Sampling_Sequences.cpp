@@ -296,11 +296,14 @@ void get_24_params() {
 
 
 int main() {
-	in = fopen("result.txt", "w");
+	in = fopen("sampling_result.txt", "w");
 	build_DDT();
 	while (true) {
 		get_10_params();
 		get_24_params();
-		if (seq_cnt == 1048576) break;
+		if (seq_cnt == 1048576) {
+			fclose(in);
+			break;
+		}
 	}
 }
