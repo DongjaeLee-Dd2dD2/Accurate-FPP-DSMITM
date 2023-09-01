@@ -296,7 +296,7 @@ void get_24_params() {
 
 
 int main() {
-	in = fopen("sampling_result.txt", "w");
+	in = fopen("sampling_result_AES.txt", "w");
 	build_DDT();
 	while (true) {
 		get_10_params();
