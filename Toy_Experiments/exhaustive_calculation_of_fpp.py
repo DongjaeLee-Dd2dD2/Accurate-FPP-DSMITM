@@ -5,7 +5,8 @@ fact.append(1)
 for i in range(1,256+1):
     fact.append(fact[i-1]*i)
 
-fo = open("False_Positive_Probability_ARIA.txt", "w")
+fo = open("Exhaustive_Calculation_Result_AES.txt", "w")
+#fo = open("Exhaustive_Calculation_Result_AES.txt", "w")
 
 ulist = [256, 128, 64, 32, 16, 8, 4, 2]
 vlist = [256, 128, 64, 32, 16, 8, 4, 2]
@@ -16,7 +17,7 @@ for u in ulist:
         fo.write('u: ' + str(u) + ', v: ' + str(v) + '\n')
         sm = 0
         idx = 0
-        f = open("result.txt", "r")
+        f = open("sampling_result_AES", "r")
         lines = f.readlines()
         for line in lines:
             idx += 1
