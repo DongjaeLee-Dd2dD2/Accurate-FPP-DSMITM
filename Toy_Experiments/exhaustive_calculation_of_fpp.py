@@ -17,13 +17,9 @@ for (u,v) in uv:
     vv = int(2**v)
 
     sm = 0
-    idx = 0
     f = open("Sampling_Result_AES.txt", "r")
     lines = f.readlines()
     for line in lines:
-        idx += 1
-        if idx%65536 == 0:
-            print('idx: ', idx)
         tmp = fact[u]
         a = [0]*vv
         
@@ -37,14 +33,9 @@ for (u,v) in uv:
     print("fpp_AES: ", math.log2(sm)-v*u)
     
     sm = 0
-    idx = 0
     f = open("Sampling_Result_ARIA.txt", "r")
     lines = f.readlines()
     for line in lines:
-        idx += 1
-        if idx%65536 == 0:
-            print('idx: ', idx)
-        tmp = fact[u]
         a = [0]*vv
         
         for j in range(0,u):
@@ -55,5 +46,6 @@ for (u,v) in uv:
         sm += tmp
     f.close()
     print("fpp_ARIA: ", math.log2(sm)-v*u)
+    print()
 
 fo.close()
