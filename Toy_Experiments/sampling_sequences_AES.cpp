@@ -78,7 +78,7 @@ void get_sequence();
 
 // main
 int main() {
-	in = fopen("sampling_result_AES.txt", "w");
+	in = fopen("Sampling_Result_AES.txt", "w");
 	build_DDT();
 	while (true) {
 		get_10_params(); // Step 1. of First Phase
