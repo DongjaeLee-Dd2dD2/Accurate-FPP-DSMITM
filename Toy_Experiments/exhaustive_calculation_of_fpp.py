@@ -90,4 +90,4 @@ for (u,v) in uv:
             tmp //= fact[a[j]]
         P_fp += tmp
     f.close()
-    print("fpp_ARIA: ", math.log2(P_fp)-v*u)
+    print("fpp_ARIA: ", math.log2(P_fp)-v*u, "\n")
