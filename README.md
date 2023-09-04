@@ -16,7 +16,7 @@ This file contains the execution results of **accurate_calculation_of_fpp.py**.
 These scripts are used for sampling sequences. Running these scripts will generate the text files named **Sampling_Result_AES.txt** and **Sampling_Result_ARIA.txt**, respectively.
 
 ### exhaustive_calculation_of_fpp.py
-This script is designed for the exhaustive calculation of false-positive probability as defined in Definition 8. It should be executed after running **sampling_sequences_AES.cpp** and **sampling_sequences_ARIA**. It is currently configured to calculate the values required for Table 5.
+This script is designed for the exhaustive calculation of false-positive probability as defined in Definition 8. It should be executed after running **sampling_sequences_AES.cpp** and **sampling_sequences_ARIA**. It is currently configured to calculate the values required for Table 5, and please note that it takes about one day for execution.
 
 ### Exhaustive_Calculation_Result.txt
 This file contains the execution results of **exhaustive_calculation_of_fpp.py**.
