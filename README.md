@@ -2,12 +2,12 @@
 
 ## Overview
 
-This repository contains codes for accurately calculating the false-positive probability and conducting toy experiments for the paper titled ''Accurate False-positive Probability of Multiset-based Demirci-Selçuk Meet-in-the-middle Attacks.''
+This repository contains codes for accurately calculating the false-positive probability and conducting toy experiments for the paper titled **''Accurate False-positive Probability of Multiset-based Demirci-Selçuk Meet-in-the-middle Attacks.''**
 
 ## Contents
 
 ### accurate_calculation_of_fpp.py
-This script provides the function to calculate the accurate false-positive probability given parameters N, u, v (delta(1, N, u, v)). It is currently set up to calculate the values needed for Tables 3 and 4.
+This script provides the function to calculate the accurate false-positive probability given parameters N, u, v (= **delta(1, N, u, v)**). It is currently set up to calculate the values needed for Tables 3 and 4.
 
 ### Accurate_Calculation_Results.txt
 This file contains the execution results of **accurate_calculation_of_fpp.py**.
